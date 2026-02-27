@@ -1,0 +1,99 @@
+.features-page .page-hero { padding-top: 9rem; }
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.filter-tab {
+  padding: 0.45rem 1.1rem;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.filter-tab:hover { color: var(--text); }
+.filter-tab.active { color: var(--black); background: var(--cyan); border-color: var(--cyan); }
+
+.feat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: fadeUp 0.5s var(--ease) both;
+}
+
+.feat-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.feat-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  display: block;
+}
+
+.feat-badges { display: flex; flex-direction: column; gap: 0.35rem; align-items: flex-end; }
+
+.feat-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.feat-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; flex: 1; }
+
+.feat-cat {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.premium-section { padding-bottom: 6rem; }
+
+.premium-box {
+  background: var(--card);
+  border: 1px solid rgba(124,58,237,0.25);
+  border-radius: 24px;
+  padding: 4rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-glow {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.premium-box .section-title { margin: 0.5rem 0 1rem; }
+
+.premium-box p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+}

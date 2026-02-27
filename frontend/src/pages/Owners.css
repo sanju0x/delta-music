@@ -1,0 +1,128 @@
+.owners-page .page-hero { padding-top: 9rem; }
+
+.owners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.owner-card {
+  display: flex;
+  gap: 1.75rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.owner-featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--card) 0%, rgba(99,179,237,0.04) 100%);
+  border-color: rgba(99,179,237,0.2);
+}
+
+.owner-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.owner-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--dark);
+  border: 2px solid var(--border);
+  display: block;
+}
+
+.owner-featured .owner-avatar {
+  width: 96px;
+  height: 96px;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(99,179,237,0.25);
+  pointer-events: none;
+}
+
+.owner-info { flex: 1; min-width: 0; }
+
+.owner-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.owner-name-row h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.owner-role {
+  font-size: 0.85rem;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  margin-bottom: 0.75rem;
+}
+
+.owner-bio {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.owner-socials { display: flex; gap: 0.5rem; }
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: var(--dark);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+  color: var(--cyan);
+  border-color: rgba(99,179,237,0.35);
+  background: rgba(99,179,237,0.07);
+  transform: translateY(-2px);
+}
+
+.join-section { padding-bottom: 6rem; }
+
+.join-box {
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+.join-box h2 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.join-box p {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 440px;
+  margin: 0 auto 2rem;
+}
+
+@media (max-width: 768px) {
+  .owners-grid { grid-template-columns: 1fr; }
+  .owner-featured { grid-column: 1; }
+  .owner-card { flex-direction: column; gap: 1.25rem; }
+  .owner-featured .owner-avatar { width: 80px; height: 80px; }
+}
